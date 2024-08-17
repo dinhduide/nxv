@@ -60,6 +60,37 @@ body{
 	background-image: url(..//img/hero/1.jpg);
 }
 
+
+#notification {
+	display: none;
+	position: fixed;
+	top: 80px;
+	right: 20px;
+	background-color: #ffaa00;
+	color: #ffffff;
+	padding: 15px;
+	border: 1px solid #704a00;
+	border-radius: 5px;
+	z-index: 1000;
+	opacity: 0; /* Bắt đầu với độ mờ 0 */
+	transition: opacity 0.5s ease-in-out; /* Hiệu ứng mượt mà */
+	
+	font-size: 15px;
+}
+#notification.show {
+	display: block; /* Hiển thị thông báo */
+	opacity: 1; /* Độ mờ tăng lên 1 */
+}
+#close-btn {
+	background-color: transparent;
+	border: none;
+	color: #000000;
+	font-weight: bold;
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+}
+
 svg{
 	fill: currentcolor;
 	width: 15px;

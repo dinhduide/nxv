@@ -37,7 +37,12 @@
 </head>
 
 <body>
-
+	
+<div id="notification">
+    <button id="close-btn">&times;</button>
+    <h5>Note: </h5>
+	<p>Giao diện website sẽ thân thiện hơn khi xem trên máy tính.</p>
+</div>
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<div class="loader_line"></div>
@@ -1074,6 +1079,29 @@
 	<!--[if lt IE 10]> <script type="text/javascript" src="./js/ie8.js"></script> <![endif]-->
 	<script src="./js/plugins.js"></script>
 	<script src="./js/init.js"></script>
+
+	
+<script>
+    window.onload = function() {
+        var notification = document.getElementById('notification');
+        var closeBtn = document.getElementById('close-btn');
+
+        // Thêm lớp "show" để hiển thị thông báo với hiệu ứng mượt mà
+        setTimeout(function() {
+            notification.classList.add('show');
+        }, 100);
+
+        // Tắt thông báo khi nhấn nút "x"
+        closeBtn.onclick = function() {
+            notification.classList.remove('show');
+            // Sau khi hiệu ứng biến mất, ẩn hẳn thông báo
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 500); // Thời gian chờ bằng với thời gian của transition
+        };
+    };
+</script>
+
 	<!-- /SCRIPTS -->
 
 </body>
