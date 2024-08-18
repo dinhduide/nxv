@@ -7,10 +7,10 @@
 
 <head>
 	<meta property="og:title" content="Nguyễn Xuân Vinh" />
-    <meta property="og:description" content="Thiết kế ý tưởng của bạn!" />
-    <meta property="og:image" content="https://dinhduide.github.io/nxv/img/hero/thum.jpg" />
-    <meta property="og:url" content="https://dinhduide.github.io/nxv/" />
-    <meta property="og:type" content="website" />
+	<meta property="og:description" content="Thiết kế ý tưởng của bạn!" />
+	<meta property="og:image" content="https://dinhduide.github.io/nxv/img/hero/thum.jpg" />
+	<meta property="og:url" content="https://dinhduide.github.io/nxv/" />
+	<meta property="og:type" content="website" />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -37,12 +37,19 @@
 </head>
 
 <body>
-	
-<div id="notification">
-    <button id="close-btn">&times;</button>
-    <h5>Note: </h5>
-	<p>Giao diện website sẽ thân thiện hơn khi xem trên máy tính.</p>
-</div>
+
+	<div id="notification">
+		<button id="close-btn">&times;</button>
+		<h5>Note: </h5>
+		<p>Giao diện website sẽ thân thiện hơn khi xem trên máy tính.</p>
+	</div>
+	<div class="zalo-container left">
+		<a id="zalo-btn" href="https://zalo.me/0838717019" target="_blank" rel="noopener nofollow">
+			<div class="animated_zalo infinite zoomIn_zalo cmoz-alo-circle"></div>
+			<div class="animated_zalo infinite pulse_zalo cmoz-alo-circle-fill"></div>
+			<span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png" alt="Contact Me on Zalo"></span>
+		</a>
+	</div>
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<div class="loader_line"></div>
@@ -1080,27 +1087,27 @@
 	<script src="./js/plugins.js"></script>
 	<script src="./js/init.js"></script>
 
-	
-<script>
-    window.onload = function() {
-        var notification = document.getElementById('notification');
-        var closeBtn = document.getElementById('close-btn');
 
-        // Thêm lớp "show" để hiển thị thông báo với hiệu ứng mượt mà
-        setTimeout(function() {
-            notification.classList.add('show');
-        }, 100);
+	<script>
+		window.onload = function () {
+			var notification = document.getElementById('notification');
+			var closeBtn = document.getElementById('close-btn');
 
-        // Tắt thông báo khi nhấn nút "x"
-        closeBtn.onclick = function() {
-            notification.classList.remove('show');
-            // Sau khi hiệu ứng biến mất, ẩn hẳn thông báo
-            setTimeout(function() {
-                notification.style.display = 'none';
-            }, 500); // Thời gian chờ bằng với thời gian của transition
-        };
-    };
-</script>
+			// Thêm lớp "show" để hiển thị thông báo với hiệu ứng mượt mà
+			setTimeout(function () {
+				notification.classList.add('show');
+			}, 100);
+
+			// Tắt thông báo khi nhấn nút "x"
+			closeBtn.onclick = function () {
+				notification.classList.remove('show');
+				// Sau khi hiệu ứng biến mất, ẩn hẳn thông báo
+				setTimeout(function () {
+					notification.style.display = 'none';
+				}, 500); // Thời gian chờ bằng với thời gian của transition
+			};
+		};
+	</script>
 
 	<!-- /SCRIPTS -->
 
