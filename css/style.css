@@ -57,7 +57,7 @@ body{
 	font-weight: 400;
 	background-color: #1e1345;
 	color: var(--main-color);
-	background-image: url(..//img/hero/2.png);
+	background-image: url(../img/hero/2.png);
 }
 
 .zalo-container img{max-width:100%;height:auto;}
